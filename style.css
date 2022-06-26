@@ -1,0 +1,142 @@
+/* Paranetri foglio di stile */
+*{margin: 0;padding: 0;box-sizing: border-box;} 
+
+html{
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(background.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Contenitore principale */
+
+.container{
+    width: 65%;
+    height: 90vh;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+/* Heading */
+.heading{
+    width: 90%;
+    z-index: 5;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Logo */
+.heading .the-logo{
+    width: 18%;
+    margin: auto;
+}
+.heading .the-logo img{
+    width: 100%;
+}
+
+/* Titolo e bottoni di scelta */
+.title-prop{
+    width: 100%;
+    margin: 5px auto;
+    
+}
+.title-prop h2{
+    text-align: center;
+    font-size: 30px;
+    color: #00DD00;
+    font-weight: 600;
+}
+.title-prop .cont-buttons{
+    width: 100%;
+    background-color: #00DD00;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.cont-buttons button{
+    padding: 1px 3px;
+    margin: 0 3px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* Scooter informazioni */
+.scooter-info{
+    width: 100%;
+}
+label{
+    font-size: 24px; 
+    color: white;
+}
+input,label{
+    margin-left: 3px;
+}
+.scooter-info h2{
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    margin-top: 2px;
+}
+.scooter{margin-top: 22px;}
+
+/* Batterie informazioni */
+.battery-one{
+    width: 40%;
+    height: 40px;
+    background-color: #F5B453;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+.battery-two{
+    width: 60%;
+    height: 40px;
+    background-color: #1EC31E;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+.battery-three{
+    width: 18%;
+    height: 40px;
+    background-color: #BE4141;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+
+/* Media Query mobile*/
+
+@media screen and (max-width:866px) {
+    .container{
+        width: 90%;
+        height: 95vh;
+    }
+    .title-prop h2{
+        font-size: 24px;
+    }
+    .cont-buttons button{
+        font-size: 12px;
+    }
+    .scooter-info h2{
+        font-size: 14px;
+    }
+    label{font-size:18px;}
+    .battery-one{
+        width: 55%;
+    }
+    .battery-two{
+        width: 75%;
+    }
+    .battery-three{
+        width: 24%;
+    }
+}
+/* Fine media query________ */
